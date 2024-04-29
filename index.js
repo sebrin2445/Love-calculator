@@ -27,7 +27,7 @@ if(loveCal===100){
     
     element.style.display="block";
     var lii=document.querySelectorAll("#li");
-    var image="images/redgw.png";
+    var image="images/heart1.png";
 
     for(var i=0; i<lii.length;i++){
         lii[i].style.backgroundImage="url('"+image+"')";
@@ -47,7 +47,7 @@ else if(loveCal<75 && loveCal>30){
     
     element.style.display="block";
     var lii=document.querySelectorAll("#li");
-    var image="images/redtesla.png";
+    var image="images/inlove1.png";
 
     for(var i=0; i<lii.length;i++){
         lii[i].style.backgroundImage="url('"+image+"')";
@@ -69,7 +69,7 @@ else{
     
     element.style.display="block";
     var lii=document.querySelectorAll("#li");
-    var image="images/silverbmw.png";
+    var image="images/brokenheart.jpg";
 
     for(var i=0; i<lii.length;i++){
         lii[i].style.backgroundImage="url('"+image+"')";
