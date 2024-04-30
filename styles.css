@@ -3,27 +3,10 @@ body{
     margin: auto;
     justify-content: center;
 background-color: #FFCBCB;
-    align-items: center;
-     background-image: url(images/pexels-james-wheeler-417074.jpg);
-       
+    align-items: center;     
 }
 
-@keyframes body {
-    0%{
-        background-image: url(images/pexels-james-wheeler-417074.jpg);
-        background-size: cover;
-    
-    }
-    75%{
-        background-image: url(images/pexels-pixabay-417344.jpg);
-        background-size: cover;
-    
-    }
-    100%{
-        background-image: url(images/pexels-tirachard-kumtanom-450062.jpg);
-    background-size: cover;
-    }
-}
+
 
 #title{
     text-align: center;

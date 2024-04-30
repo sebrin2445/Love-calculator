@@ -1,87 +1,91 @@
 
-let username;
-let othername;
-document.getElementById("btns").onclick = function(){
-    username=document.getElementById("inputyour").value;
-    othername=document.getElementById("inputhis").value;
-    document.getElementById("title").innerHTML = username;
-   console.log(username);
-}
 
-var loveCal=Math.random();
+let username=document.getElementById("inputyour").value;
+let othername=document.getElementById("inputhis").value;
+let calcbtn=document.getElementById("btns");
+calcbtn.addEventListener('click', () =>{
+   /**  if (username === '' || othername === '') {
+        // Display an error message
+        document.getElementById("title").innerHTML = 'Please enter both names.';
+        
+      } else{*/
+      var loveCal=Math.random();
 loveCal=loveCal*100;
 loveCal=Math.floor(loveCal)+1;
-let hey;
-document.getElementById("btns").onclick = function(){
 
-    username=document.getElementById("inputyour").value;
-    othername=document.getElementById("inputhis").value;
-if(loveCal===100&& loveCal<90){
-    var element=document.getElementById("sec");
+if (loveCal > 90) {
     
-    element.style.display="block";
-    var elementt=document.getElementById("head");
-    elementt.style.display="block";
-    var lii=document.querySelectorAll("#li");
-    var image="images/justgetmarried.png";
-
-    for(var i=0; i<lii.length;i++){
-        lii[i].style.backgroundImage="url('"+image+"')";
-
-        
+let username=document.getElementById("inputyour").value;
+let othername=document.getElementById("inputhis").value;
     
-    }
-    
-    var lii2=document.querySelectorAll("#li1");
-    var imagee="images/married.png";
-    for(var i=0; i<lii.length;i++){
-        lii2[i].style.backgroundImage="url('"+imagee+"')";
+        var element=document.getElementById("sec");
 
-        
-    
-    }
-   document.getElementById("form").innerHTML="your love score is "+ loveCal+"%" + " Congratulation your now husband and wife";
+element.style.display="block";
+var elementt=document.getElementById("head");
+elementt.style.display="block";
+var lii=document.querySelectorAll("#li");
+var image="images/married.png";
 
-   document.getElementById("title").innerHTML="your soulmate is "+ othername;
-   
-} 
- if(loveCal>75){
-    var element=document.getElementById("sec");
-    
-    element.style.display="block";
-    var elementt=document.getElementById("head");
-    elementt.style.display="block";
-    var lii=document.querySelectorAll("#li");
-    var image="images/melted.png";
+for(var i=0; i<lii.length;i++){
+lii[i].style.backgroundImage="url('"+image+"')";
 
-    for(var i=0; i<lii.length;i++){
-        lii[i].style.backgroundImage="url('"+image+"')";
 
-        
-    
-    }
-    
-    var lii2=document.querySelectorAll("#li1");
-    var imagee="images/melting.png";
-    for(var i=0; i<lii.length;i++){
-        lii2[i].style.backgroundImage="url('"+imagee+"')";
 
-        
-    
-    }
-    
-    hey=loveCal + "%";
-document.getElementById("title").innerHTML="I think We got the soulmate "+ othername + " is the one";
-
-var textt=document.getElementById("form").innerHTML="Dear " + username + " Your love score is "+ hey;
-textt.style.fontweight ="800";
-
-document.section.style.display="block";
 }
-else if(loveCal<75 && loveCal>30){
-    //alert(loveCal+"%");
+
+var lii2=document.querySelectorAll("#li1");
+var imagee="images/justgetmarried.png";
+for(var i=0; i<lii.length;i++){
+lii2[i].style.backgroundImage="url('"+imagee+"')";
+
+
+
+}
+document.getElementById("form").innerHTML="your love score is "+ loveCal+"%" + " Congratulation your now husband and wife";
+document.getElementById("title").innerHTML="your soulmate is "+ othername;
+}
+   else if(loveCal > 70){
     
-    var element=document.getElementById("sec");
+let username=document.getElementById("inputyour").value;
+let othername=document.getElementById("inputhis").value;
+        var element=document.getElementById("sec");
+    
+        element.style.display="block";
+        var elementt=document.getElementById("head");
+        elementt.style.display="block";
+        var lii=document.querySelectorAll("#li");
+        var image="images/melted.png";
+    
+        for(var i=0; i<lii.length;i++){
+            lii[i].style.backgroundImage="url('"+image+"')";
+    
+            
+        
+        }
+        
+        var lii2=document.querySelectorAll("#li1");
+        var imagee="images/melting.png";
+        for(var i=0; i<lii.length;i++){
+            lii2[i].style.backgroundImage="url('"+imagee+"')";
+    
+            
+        
+        }
+        
+        hey=loveCal + "%";
+    document.getElementById("title").innerHTML="I think We got the soulmate "+ othername + " is the one";
+    
+    var textt=document.getElementById("form").innerHTML="Dear " + username + " Your love score is "+ hey;
+    textt.style.fontweight ="800";
+    
+    document.section.style.display="block";
+   }
+       
+else if(loveCal > 50 && loveCal > 30) {
+    
+let username=document.getElementById("inputyour").value;
+let othername=document.getElementById("inputhis").value;
+        var element=document.getElementById("sec");
     
     element.style.display="block";
     var elementt=document.getElementById("head");
@@ -91,9 +95,6 @@ else if(loveCal<75 && loveCal>30){
 
     for(var i=0; i<lii.length;i++){
         lii[i].style.backgroundImage="url('"+image+"')";
-
-        
-    
     }
     
     var lii2=document.querySelectorAll("#li1");
@@ -112,11 +113,10 @@ document.getElementById("title").innerHTML="Dear " + username + "Your love score
 document.body.style.background = "pink";
 var textt=document.getElementById("form").innerHTML="Better not to say "+ othername + " is your soulmate";
 
-textt.style.fontweight ="800";
-
-
-}
-else{
+}else{
+            
+let username=document.getElementById("inputyour").value;
+let othername=document.getElementById("inputhis").value;
     var element=document.getElementById("sec");
     
     element.style.display="block";
@@ -152,4 +152,12 @@ else{
   
 
 }
-}
+
+        
+    
+      });
+    
+
+  
+
+
